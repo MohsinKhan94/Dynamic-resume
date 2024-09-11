@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Form</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.6.0/jspdf.umd.min.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Dynamic Resume Form</h1>
+        <form id="resume-form">
+            <div class="section" id="personal-info">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="section" id="education">
+                <h2>Education</h2>
+                <button type="button" id="add-education">Add Education</button>
+                <!-- Entries will be added here -->
+            </div>
+            <div class="section" id="work-experience">
+                <h2>Work Experience</h2>
+                <button type="button" id="add-work-experience">Add Work Experience</button>
+                <!-- Entries will be added here -->
+            </div>
+            <div class="section" id="skills">
+                <h2>Skills</h2>
+                <button type="button" id="add-skills">Add Skill</button>
+                <!-- Entries will be added here -->
+            </div>
+            <button type="submit">Submit Resume</button>
+        </form>
+        <div id="resume-output" class="resume-section">
+            <!-- Dynamic resume content will be displayed here -->
+        </div>
+    </div>
+    <script src="script.js"></script> <!-- Link to your TypeScript-compiled JavaScript file -->
+</body>
+</html>
